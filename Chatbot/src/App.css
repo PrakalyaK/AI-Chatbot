@@ -1,0 +1,55 @@
+.sendbutton{
+  border:none;
+  border-radius:12px;
+  background-color:rgb(25,135,84);
+  padding:12px 22px;
+  font-size:15px;
+  cursor: pointer;
+}
+.inputarea{
+  display:flex;
+  gap:1.5rem;
+  margin:10px;
+  margin-top:30px;
+  margin-bottom:60px;
+  align-items: start;
+}
+#inputbox{
+  display:flex;
+  min-width:0;
+  flex-grow:1;
+  padding:12px 22px;
+  border-radius:12px;
+  border:2px solid black;
+  
+}
+#user{
+  display:flex;
+ justify-content: end;
+}
+#robot{
+  display:flex;
+
+}
+.person{
+  margin:10px;
+  align-items: start;
+  gap:5px;
+}
+#text {
+  background-color: rgb(238,238,238);
+  font-family: arial;
+  padding:15px 20px;
+  border-radius: 12px;
+  max-width:300px;
+}
+.chatbox{
+  margin-top:20px;
+  display:flex;
+  flex-direction:column;
+  flex-grow: 1;
+  min-height: 0;
+  justify-content: end;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
