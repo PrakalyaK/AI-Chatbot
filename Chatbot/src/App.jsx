@@ -5,7 +5,15 @@ import userImage from './assets/user.png';
 import robotImage from './assets/robot.png';
 
 function App() {
-  const [data,setData]= useState([]);
+  const [data,setData]= useState(()=>{
+   const savedData=localStorage.getItem("data");
+   return savedData?JSON.parse(savedData):[];
+  });
+
+  //save message whenever data changes
+  useEffect(()=>{
+   localStorage.setItem("data",JSON.stringify(data));
+  },[data]);
   return (
     <div className='appcontainer'>
      <ChatMessages data={data}/>
